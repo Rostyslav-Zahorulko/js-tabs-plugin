@@ -1,0 +1,14 @@
+<div class="controls" data-controls>
+    {{#each this}}
+    <a href="#{{title}}" class="control">{{title}}</a>
+    {{/each}}
+</div>
+
+<div class="panes" data-panes>
+    {{#each this}}
+    <div class="pane" id="{{title}}">
+        <h2 class="pane__title">{{title}}</h2>
+        <p class="pane__text">{{text}}</p>
+    </div>
+    {{/each}}
+</div>
