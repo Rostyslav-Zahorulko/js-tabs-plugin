@@ -125,6 +125,8 @@ class Tabs {
   }
 }
 
+// Перевірка плагіна в дії
+
 const tabs1 = new Tabs({
   rootId: 1,
   activeTab: 1,
@@ -163,7 +165,7 @@ const tabs2 = new Tabs({
   position: 'beforeend',
   data: [
     {
-      title: 'Baseball',
+      title: 'Football',
       text:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
     },
@@ -173,7 +175,12 @@ const tabs2 = new Tabs({
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
     },
     {
-      title: 'Football',
+      title: 'Volleyball',
+      text:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
+    },
+    {
+      title: 'Baseball',
       text:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
     },
@@ -181,3 +188,39 @@ const tabs2 = new Tabs({
 });
 
 console.dir(tabs2);
+
+const tabs3 = new Tabs({
+  rootId: 3,
+  activeTab: 5,
+  selector: 'body',
+  position: 'beforeend',
+  data: [
+    {
+      title: 'Mango',
+      text:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
+    },
+    {
+      title: 'Poly',
+      text:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
+    },
+    {
+      title: 'Ajax',
+      text:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
+    },
+    {
+      title: 'Norton',
+      text:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
+    },
+    {
+      title: 'Boby',
+      text:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
+    },
+  ],
+});
+
+console.dir(tabs3);
