@@ -1,7 +1,7 @@
 {
-  "name": "tabs-plugin",
-  "version": "1.1.0",
-  "description": "",
+  "name": "js-tabs-plugin",
+  "version": "1.0.0",
+  "description": "Simple VanillaJS plugin for creating tabs in your app",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --env.mode development --config ./webpack/config.js",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rostyslav-Zahorulko/tabs-2.git"
+    "url": "git+https://github.com/Rostyslav-Zahorulko/js-tabs-plugin.git"
   },
-  "keywords": [],
+  "keywords": ["js", "tabs", "plugin"],
   "author": "Rostyslav Zahorulko <rostyslav.zagorulko@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Rostyslav-Zahorulko/tabs-2/issues"
+    "url": "https://github.com/Rostyslav-Zahorulko/js-tabs-plugin/issues"
   },
-  "homepage": "https://rostyslav-zahorulko.github.io/tabs-2",
+  "homepage": "https://rostyslav-zahorulko.github.io/js-tabs-plugin",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/plugin-proposal-class-properties": "^7.10.4",

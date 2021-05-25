@@ -1,7 +1,7 @@
 import tabsTpl from './templates/tabs.hbs';
 import './styles.css';
 
-class Tabs {
+export default class Tabs {
   constructor({
     rootId = 1,
     activeTab = 1,
@@ -91,12 +91,12 @@ class Tabs {
   }
 
   _setActivePane(id) {
-    const pane = this._getPainById(id);
+    const pane = this._getPaneById(id);
     this._makePaneActive(pane);
   }
 
   _removeActivePane(id) {
-    const pane = this._getPainById(id);
+    const pane = this._getPaneById(id);
     this._makePaneInactive(pane);
   }
 
@@ -104,7 +104,7 @@ class Tabs {
     return control.getAttribute('href').slice(1);
   }
 
-  _getPainById(id) {
+  _getPaneById(id) {
     return this._refs.panes.querySelector(`#${id}`);
   }
 
@@ -125,7 +125,7 @@ class Tabs {
   }
 }
 
-// Перевірка плагіна в дії
+// Examples of usage:
 
 const tabs1 = new Tabs({
   rootId: 1,
@@ -135,28 +135,22 @@ const tabs1 = new Tabs({
   data: [
     {
       title: 'HTML',
-      text:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi.',
     },
     {
       title: 'CSS',
-      text:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi.',
     },
     {
       title: 'JavaScript',
-      text:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi.',
     },
     {
       title: 'NodeJS',
-      text:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi.',
     },
   ],
 });
-
-console.dir(tabs1);
 
 const tabs2 = new Tabs({
   rootId: 2,
@@ -166,61 +160,19 @@ const tabs2 = new Tabs({
   data: [
     {
       title: 'Football',
-      text:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi.',
     },
     {
       title: 'Basketball',
-      text:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi.',
     },
     {
       title: 'Volleyball',
-      text:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi.',
     },
     {
       title: 'Baseball',
-      text:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi.',
     },
   ],
 });
-
-console.dir(tabs2);
-
-const tabs3 = new Tabs({
-  rootId: 3,
-  activeTab: 5,
-  selector: 'body',
-  position: 'beforeend',
-  data: [
-    {
-      title: 'Mango',
-      text:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
-    },
-    {
-      title: 'Poly',
-      text:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
-    },
-    {
-      title: 'Ajax',
-      text:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
-    },
-    {
-      title: 'Norton',
-      text:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
-    },
-    {
-      title: 'Boby',
-      text:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis exercitationem quas rerum maxime libero aut molestiae assumenda, odit explicabo quo ex nulla voluptate minima eveniet velit ullam itaque iure ipsa dolores, iusto tempora et! Mollitia sunt necessitatibus nostrum placeat voluptatibus consequuntur inventore sed incidunt eius nesciunt modi',
-    },
-  ],
-});
-
-console.dir(tabs3);
