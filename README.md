@@ -2,10 +2,6 @@
 
 Simple VanillaJS plugin for creating tabs in your app
 
-## Live examples
-
-https://rostyslav-zahorulko.github.io/js-tabs-plugin
-
 ## Installation
 
 ```
@@ -15,7 +11,7 @@ npm install js-tabs-plugin
 ## Usage
 
 ```js
-import Tabs from 'js-tabs-plugin';
+import Tabs from 'js-tabs-plugin/src';
 ```
 
 Tabs is the class that takes object with 5 fields:
